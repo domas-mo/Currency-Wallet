@@ -1,5 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-scr/data/apiKey.js
+src/data/apiKey.js
 
 # dependencies
 /node_modules
