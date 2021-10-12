@@ -6,6 +6,10 @@ import {fields, init} from '../../data/data';
 import CurrencyApi from '../../modules/currencyApi';
 import {v4 as uuid} from 'uuid';
 
+import StyledInput from '../../styled/Input.styled';
+import StyledButton from '../../styled/Button.styled';
+import StyledParagraph from '../../styled/Parahraph.styled';
+
 const FormContainer = () => {
     const dispatch = useDispatch();
     const [formData, setFormData] = useState(init);
@@ -48,33 +52,28 @@ const FormContainer = () => {
     };
 
     const handleBlur = ({ name }) => {
-        if (name === 'purchaseDate') {
+        if (name === 'buyDate') {
             const api = new CurrencyApi();
-            api.getExchangeRate(formData.currency, formData.purchaseDate)
+            api.getExchangeRate(formData.currency, formData.buyDate)
                 .then((resp) => setFormData({
                     ...formData,
-                    purchasePrice: resp.toFixed(3),
                 }));
         }
     };
 
-    const style = {
-        color: "red"
-    }
-
-    const renderError = () => <p style={style}>{error}</p>;
+    const renderError = () => <StyledParagraph>{error}</StyledParagraph>;
 
     const renderFormFields = () => fields.map(({ name, type, placeholder }) => (
         <label key={name} htmlFor={name}>
-            <input name={name} id={name} type={type} placeholder={placeholder} value={formData[name]} onChange={(e) => onInputChange(e.target)}/>
+            <StyledInput name={name} id={name} type={type} placeholder={placeholder} value={formData[name]} onChange={(e) => onInputChange(e.target)}/>
         </label>
     ));
 
     return (
         <form onSubmit={(e) => handleSubmit(e)} onBlur={(e) => handleBlur(e.target)}>
             {renderFormFields()}
+            <StyledButton type="submit" block>Add</StyledButton>
             {error ? renderError() : null}
-            <button type="submit" block>Add</button>
         </form>
     );
 };

@@ -4,13 +4,24 @@ import store from './store';
 import FormContainer from './components/Form/Form';
 import Table from './components/Table/Table';
 
+import GlobalStyle from './styled/GlobalStyle';
+import ResetStyle from './styled/Reset';
+
+import StyledContainer from './styled/Container.styled';
+import StyledHeader from './styled/Header.styled';
+import StyledTitle from './styled/Title.styled';
+
 const App = () => (
     <Provider store={store}>
-        <div>
-            <h1>Wallet</h1>
-        	<FormContainer />
+        <ResetStyle/>
+        <GlobalStyle/>
+        <StyledContainer>
+            <StyledHeader>
+               <StyledTitle>Wallet</StyledTitle> 
+               <FormContainer />
+            </StyledHeader>
             <Table />
-    	</div>
+    	</StyledContainer>
     </Provider>
 );
 

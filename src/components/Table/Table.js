@@ -2,27 +2,25 @@ import React from 'react';
 import useRenderRows from '../../hooks/useRenderRows';
 import {tableHeaders} from '../../data/data';
 
-const style = {
-    padding: '20px',
-    border: '1px solid black'
-}
+import StyledTh from '../../styled/Th.styled';
+import StyledTable from '../../styled/Table.styled';
 
 const TableContainer = () => {
     const [renderTRows] = useRenderRows();
 
     const renderTheads = () => {
 		return tableHeaders.map((head) => {
-			return <th style={style} key={head}>{head}</th>;
+			return <StyledTh key={head}>{head}</StyledTh>;
 		});
 	};
 
     return (
-        <table>
+        <StyledTable>
             <thead>
                 <tr>{renderTheads()}</tr>
             </thead>
             <tbody>{renderTRows}</tbody>
-        </table>
+        </StyledTable>
     );
 };
 

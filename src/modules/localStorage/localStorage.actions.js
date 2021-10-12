@@ -15,10 +15,10 @@ export const setLsToStorage = (entries) => ({
 
 export const saveToLocalStorage = () => (dispatch, getState) => {
     const { currencies } = getState().localStorage;
-    ls.pushToLocalStorage(currencies);
+    ls.pushItem(currencies);
 };
 
 export const getLocalStorage = () => (dispatch) => {
-    const entries = ls.pullFromLocalStorage();
+    const entries = ls.pullItem();
     dispatch(setLsToStorage(entries));
 };

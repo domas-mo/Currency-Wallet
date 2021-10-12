@@ -3,7 +3,7 @@ class LocalStorage {
         this.key = 'entries';
     }
 
-    isLocalStorageSupported() {
+    test() {
         try {
             localStorage.setItem('test', 'test');
             localStorage.removeItem('test');
@@ -13,15 +13,15 @@ class LocalStorage {
         }
     }
 
-    pushToLocalStorage(object) {
-        if (!this.isLocalStorageSupported()) {
+    pushItem(object) {
+        if (!this.test()) {
             throw new Error('Error saving in LocalStorage.js');
         } else {
             localStorage.setItem(this.key, JSON.stringify(object));
         }
     }
 
-    pullFromLocalStorage() {
+    pullItem() {
         if (localStorage.getItem(this.key)) {
             return JSON.parse(localStorage.getItem(this.key));
         }
