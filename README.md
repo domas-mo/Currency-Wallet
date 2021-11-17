@@ -3,7 +3,7 @@
 
 # Currency Wallet
 
-Currency wallet is an application that will calculate the potential profit or loss of currencies. The user will be able to enter detailed information related to the currencies owned (type of currency, quantity, purchase date, purchase price). It will be save in local storage.
+Currency wallet is an application that will calculate the potential profit or loss of currencies. The user will be able to enter detailed information related to the currencies owned (type of currency, quantity, purchase date, purchase price).
 
 **Main features**:
 - React
