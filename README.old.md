@@ -1,4 +1,4 @@
-[Currency Wallet](./src/image/CurrencyWallet.png)
+![Currency Wallet](./src/image/CurrencyWallet.png)
 
 
 # Currency Wallet
