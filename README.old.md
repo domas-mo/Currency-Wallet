@@ -25,20 +25,6 @@ The project uses [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/
 We need also `json-server` as part of the test. `npm install json-server` and type into the terminal `json-server --watch ./db/data.json --port 3005`
 &nbsp;
 
-## 🤔 Solutions provided in the project
-
-1. Columns are rendered dynamically. The app follows the rules you specify.
-```
-
-```
-
-2. LocalStorage enables the app to store the data inside it. I created my custom hook called useStorage to handle data saving. 
-```
-
-};
-```
-&nbsp;
-
 ## 🙋‍♂️ Feel free to contact me
 
 Find me on...
