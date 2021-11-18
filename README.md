@@ -22,8 +22,6 @@ Currency wallet is an application that will calculate the potential profit or lo
 ## 💿 Installation
 
 The project uses [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). Having them installed, type into the terminal: `npm i`.
-We need also `json-server` as part of the test. `npm install json-server` and type into the terminal `json-server --watch ./db/data.json --port 3005`
-&nbsp;
 
 ## 🙋‍♂️ Feel free to contact me
 
