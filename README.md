@@ -22,7 +22,7 @@ Currency wallet is an application that will calculate the potential profit or lo
 ## 💿 Installation
 
 The project uses [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). Having them installed, type into the terminal: `npm i`.
-You also need API key from [exchangeratesapi](https://exchangeratesapi.io/), then you have to create apiKey file in data folder and export your apiKey.
+You also need `API key` from [exchangeratesapi](https://exchangeratesapi.io/), then you have to create `apiKey` file in `data` folder and `export` your apiKey.
 &nbsp;
 
 ## 🙋‍♂️ Feel free to contact me
