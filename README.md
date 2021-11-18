@@ -27,6 +27,7 @@ You also need `API key` from [exchangeratesapi](https://exchangeratesapi.io/), t
 
 ## 🙋‍♂️ Feel free to contact me
 
+Hi there! I am Domink! I am looking for my first professional experience in IT area in Warsaw.
 Find me on...
 
 <p align="center">
